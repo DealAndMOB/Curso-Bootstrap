@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 2 - Bootstrap Grid</title>
+    <!-- Importar la hoja de estilo de Bootstrap desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        SISTEMA DE REJILLA DE BOOTSTRAP
+        Filas y Columnas: 
+        - Una fila puede contener hasta 12 posiciones (columnas).
+        - Las columnas se ajustan automáticamente si no se especifica un número después de "col".
+    -->
+
+    <div class="container bg-primary text-light">
+        <!-- 
+            Dentro del contenedor, creamos una fila utilizando el class "row".
+        -->
+        <div class="row">
+            <!-- 
+                Creamos tres columnas dentro de la fila.
+                Sin un número específico después de "col", cada columna se ajustará automáticamente.
+                En este ejemplo, cada columna ocupará 4 posiciones en la fila.
+            -->
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+        </div>
+
+        <!-- 
+            Personalización del Tamaño de Columnas:
+            - Puedes personalizar el tamaño de una columna especificando el número de posiciones que debe ocupar.
+            - Por ejemplo, "col-6" hará que una columna ocupe la mitad del ancho disponible.
+        -->
+        <div class="row mt-3">
+            <div class="col-6 bg-secondary text-light">Personalizado 1</div>
+            <div class="col-3 bg-info text-light">Personalizado 2</div>
+            <div class="col-3 bg-danger text-light">Personalizado 3</div>
+        </div>
+    </div>
+
+    <!-- 
+        Asegúrate de incluir el archivo JavaScript de Bootstrap al final del cuerpo para garantizar un correcto funcionamiento.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
