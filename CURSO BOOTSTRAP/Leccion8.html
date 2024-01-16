@@ -9,7 +9,50 @@
 </head>
 <body>
    
-    
+    <!-- OFFSET EN BOOTSTRAP
+    Ejemplo: -->
+    <!-- 
+        En este ejemplo, se utiliza la clase "col-md-8" para definir una columna que ocupará 8 posiciones en pantallas medianas o mayores (≥768px).
+        La clase "offset-md-2" se utiliza para añadir un espacio vacío de 2 posiciones a la izquierda de la columna, creando así un offset.
+        En resumen, la columna se desplaza 2 posiciones hacia la derecha respecto a la posición normal en la rejilla.
+    -->
+    <div class="col-md-8 bg-secondary offset-md-2">1</div>
+
+    <div class="container bg-info">
+        <!-- Se inicia la primera fila -->
+        <div class="row">
+            <!-- 
+                En esta fila, se crea una columna que ocupa 6 posiciones en pantallas pequeñas y mayores (≥576px).
+                La clase "offset-md-6" se utiliza para añadir un espacio vacío de 6 posiciones a la izquierda de la columna, creando así un offset.
+                La columna, por lo tanto, se desplaza 6 posiciones hacia la derecha en pantallas medianas o mayores.
+            -->
+            <div class="col-12 col-md-6 offset-md-6 border">1</div>
+        </div>
+        <!-- Se cierra la primera fila -->
+
+        <!-- Se inicia la segunda fila -->
+        <div class="row">
+            <!-- 
+                En esta fila, se crea una columna que ocupa 8 posiciones en pantallas pequeñas y mayores (≥576px).
+                La clase "offset-md-2" se utiliza para añadir un espacio vacío de 2 posiciones a la izquierda de la columna, creando así un offset.
+                La columna, por lo tanto, se desplaza 2 posiciones hacia la derecha en pantallas medianas o mayores.
+            -->
+            <div class="col-8 offset-md-2 border">2</div>
+        </div>
+        <!-- Se cierra la segunda fila -->
+
+        <!-- Se inicia la tercera fila -->
+        <div class="row">
+            <!-- 
+                En esta fila, se crea una columna que ocupa 3 posiciones en pantallas pequeñas y mayores (≥576px).
+                La clase "offset-md-0 offset-12" se utiliza para añadir un espacio vacío de 12 posiciones a la derecha de la columna en pantallas pequeñas,
+                y 0 posiciones en pantallas medianas o mayores. Esto crea un offset que desplaza la columna 12 posiciones hacia la derecha en pantallas pequeñas.
+            -->
+            <div class="col-3 offset-md-0 offset-12 border">3</div>
+        </div>
+        <!-- Se cierra la tercera fila -->
+    </div>
+
     <!-- 
         Asegúrate de incluir el archivo JavaScript de Bootstrap al final del cuerpo para garantizar un correcto funcionamiento.
     -->
