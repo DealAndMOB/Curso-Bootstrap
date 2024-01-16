@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Importar la hoja de estilo de Bootstrap desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- UTILS
+    Display -->
+
+    <!-- 
+        En este ejemplo se utilizan las clases de utilidad de Bootstrap para el manejo de la propiedad "display".
+        Las clases "d-none" y "d-block" se utilizan para mostrar u ocultar elementos en diferentes tamaños de pantalla.
+        En este caso, el primer span será visible solo en pantallas grandes (lg) y oculto en el resto de los tamaños (d-none d-lg-block).
+        El segundo span será visible solo en pantallas pequeñas (sm) y oculto en el resto de los tamaños (d-block d-sm-none).
+    -->
+    <span class="d-none d-lg-block bg-danger">Visible en grande</span>
+    <span class="d-block d-lg-none bg-info">Oculto en grande</span>
+
+    <!-- 
+        Se añaden dos ejemplos adicionales para reforzar el entendimiento de las clases de utilidad de display.
+        El tercer span será oculto en pantallas pequeñas (sm) y visible en el resto de los tamaños (d-none d-sm-block).
+        El cuarto span será visible solo en pantallas pequeñas (sm) y oculto en el resto de los tamaños (d-block d-sm-none).
+    -->
+    <span class="d-none d-sm-block bg-secondary">Oculto en pequeño</span>
+    <span class="d-block d-sm-none bg-primary">Visible en pequeño</span>
+
+    <!-- Posibles valores para la propiedad "display":
+         none | inline | inline-block | block | table | table-cell | table-row | flex | inline-flex -->
+
+       <!-- Ejemplos con diferentes valores de "display" -->
+
+    <!-- none: Oculta el elemento -->
+    <div class="d-none bg-danger">Este elemento está oculto</div>
+
+    <!-- inline: Elemento en línea, ocupando solo el ancho necesario -->
+    <div class="d-inline bg-info">Elemento en línea</div>
+
+    <!-- inline-block: Elemento en línea con bloque -->
+    <div class="d-inline-block bg-secondary">Elemento en línea con bloque</div>
+
+    <!-- block: Elemento en bloque, ocupa el ancho completo disponible -->
+    <div class="d-block bg-primary">Elemento en bloque</div>
+
+    <!-- table: Elemento con comportamiento de tabla -->
+    <div class="d-table bg-success">Elemento con comportamiento de tabla</div>
+
+    <!-- table-cell: Elemento que se comporta como una celda de tabla -->
+    <div class="d-table-cell bg-warning">Elemento que se comporta como celda de tabla</div>
+
+    <!-- table-row: Elemento que se comporta como una fila de tabla -->
+    <div class="d-table-row bg-info">Elemento que se comporta como fila de tabla</div>
+
+    <!-- flex: Elemento con contenedor flexible -->
+    <div class="d-flex bg-danger">
+        <div class="p-2">Flex Item 1</div>
+        <div class="p-2">Flex Item 2</div>
+        <div class="p-2">Flex Item 3</div>
+        <div class="p-2">Flex Item 4</div>
+    </div>
+
+    <!-- inline-flex: Elemento en línea con contenedor flexible -->
+    <div class="d-inline-flex bg-primary">
+        <div class="p-2">Flex Item 1</div>
+        <div class="p-2">Flex Item 2</div>
+        <div class="p-2">Flex Item 3</div>
+        <div class="p-2">Flex Item 4</div>
+    </div>
+
+
+
+     <!-- 
+        Asegúrate de incluir el archivo JavaScript de Bootstrap al final del cuerpo para garantizar un correcto funcionamiento.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
