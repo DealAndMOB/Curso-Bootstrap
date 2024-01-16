@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 6 - Bootstrap Grid</title>
+    <!-- Importar la hoja de estilo de Bootstrap desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        Cambiar el tamaño de las columnas en función del tamaño de la pantalla:
+        En este ejemplo, se utilizan clases de Bootstrap para definir diferentes tamaños de columnas 
+        dependiendo del tamaño de la pantalla en la que se visualiza la página.
+    -->
+    <div class="row bg-info text-light">
+        <!-- 
+            En pantallas pequeñas (menos de 576px de ancho), 
+            la primera columna ocupa todas las 12 posiciones (col-12).
+            En pantallas medianas (≥576px), la primera columna ocupa 3 posiciones y la segunda 9 posiciones (col-md-3 y col-md-9, respectivamente).
+        -->
+        <div class="col-12 col-md-3">1</div>
+        <div class="col-12 col-md-9">2</div>
+    </div>
+
+    <!--
+        Breakpoints de la rejilla de Bootstrap 5:
+        Bootstrap utiliza diferentes clases de prefijo para definir tamaños de columnas en función del ancho de la pantalla.
+        Aquí están los nombres y los prefijos asociados con sus tamaños correspondientes:
+        - Extra Small (.col, sin interfijo): <576px
+        - Small (.col-sm): ≥576px
+        - Medium (.col-md): ≥768px
+        - Large (.col-lg): ≥992px
+        - Extra Large (.col-xl): ≥1200px
+        - Extra Extra Large (.col-xxl): ≥1400px
+    -->
+
+    <!-- ejercicio -->
+
+    <div class="container mt-3 bg-info text-light">
+        <div class="row">
+            <!-- 
+                En este ejercicio, se crean varias columnas que se ajustan a diferentes tamaños de pantalla.
+                Cada div con clase "col-6" ocupará la mitad del ancho en pantallas pequeñas y cada div con clase "col-md-3"
+                ocupará 1/4 del ancho en pantallas medianas o mayores. Además, hay algunas columnas que ocupan todo el ancho en cualquier tamaño de pantalla.
+                La clase "border" agrega un borde a cada columna para mayor visibilidad.
+            -->
+            <div class="col-6 col-md-3 border">1</div>
+            <div class="col-6 col-md-3 border">2</div>
+            <div class="col-6 col-md-3 border">3</div>
+            <div class="col-6 col-md-3 border">4</div>
+            <div class="col-12 col-md-6 border">1</div>
+            <div class="col-12 col-md-6 border">2</div>
+            <div class="col-12 col-md-6 border">3</div>
+            <div class="col-12 col-md-6 border">4</div>
+            <div class="col-12 col-md-6 border">5</div>
+            <div class="col-12 col-md-6 border">6</div>
+            <div class="col-12 col-md-6 border">7</div>
+            <div class="col-12 col-md-6 border">8</div>
+            <div class="col-12 col-md-6 border">9</div>
+            <div class="col-12 col-md-6 border">10</div>
+        </div>
+    </div>
+
+    <!-- 
+        Asegúrate de incluir el archivo JavaScript de Bootstrap al final del cuerpo para garantizar un correcto funcionamiento.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
