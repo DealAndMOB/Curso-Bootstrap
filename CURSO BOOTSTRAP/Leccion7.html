@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Importar la hoja de estilo de Bootstrap desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ejercicio 2 de tamaños de columna -->
+    <div class="container">
+        <!-- Se inicia la primera fila -->
+        <div class="row bg-danger">
+            <!-- 
+                En esta primera fila, se crean cuatro columnas utilizando clases de Bootstrap para diferentes tamaños de pantalla.
+                En pantallas pequeñas (menos de 576px de ancho), cada columna ocupará la mitad del ancho (col-6).
+                En pantallas medianas o mayores (≥576px), cada columna ocupará 1/4 del ancho (col-md-3).
+            -->
+            <div class="col-6 col-md-3">1</div>
+            <div class="col-6 col-md-3">2</div>
+            <div class="col-6 col-md-3">3</div>
+            <div class="col-6 col-md-3">4</div>
+        </div>
+        <!-- Se cierra la primera fila -->
+
+        <!-- Se inicia la segunda fila -->
+        <div class="row bg-danger">
+            <!-- 
+                En esta segunda fila, se crean diez columnas.
+                En pantallas pequeñas y medianas (menos de 992px de ancho), cada columna ocupará el ancho completo (col-12).
+                En pantallas grandes o mayores (≥992px), cada columna ocupará 1/4 del ancho (col-lg).
+                La clase "col-lg" se usa cuando se quiere definir el tamaño de columna específicamente para pantallas grandes y mayores.
+            -->
+            <div class="col-12 col-md-6 col-lg">1</div>
+            <div class="col-12 col-md-6 col-lg">2</div>
+            <div class="col-12 col-md-6 col-lg">3</div>
+            <div class="col-12 col-md-6 col-lg">4</div>
+            <div class="col-12 col-md-6 col-lg">5</div>
+            <div class="col-12 col-md-6 col-lg">6</div>
+            <div class="col-12 col-md-6 col-lg">7</div>
+            <div class="col-12 col-md-6 col-lg">8</div>
+            <div class="col-12 col-md-6 col-lg">9</div>
+            <div class="col-12 col-md-6 col-lg">10</div>
+        </div>
+        <!-- Se cierra la segunda fila -->
+    </div>
+    <!-- Se cierra el contenedor principal -->
+
+    <!-- 
+        Asegúrate de incluir el archivo JavaScript de Bootstrap al final del cuerpo para garantizar un correcto funcionamiento.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
