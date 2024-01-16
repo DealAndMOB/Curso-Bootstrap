@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Importar la hoja de estilo de Bootstrap desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   
+    <!-- REORDENACIÓN DE COLUMNAS -->
+    <!-- 
+        En este ejemplo, se utiliza la reordenación de columnas en Bootstrap.
+        La clase "order-md-3" se utiliza para especificar que la primera columna ("Columna 1") tendrá un orden 3 en pantallas medianas o mayores (≥768px).
+        La clase "order-md-2" se utiliza para especificar que la segunda columna ("Columna 2") tendrá un orden 2 en pantallas medianas o mayores.
+        La clase "order-md-1" se utiliza para especificar que la tercera columna ("Columna 3") tendrá un orden 1 en pantallas medianas o mayores.
+
+        En pantallas pequeñas (menos de 576px de ancho), el orden por defecto se mantiene, y las columnas aparecerán en el orden en el que están en el código HTML.
+
+        La reordenación de columnas es útil para cambiar el orden visual de las columnas en diseños responsivos sin cambiar el orden en el código fuente. 
+        Esto permite una presentación visual diferente según el tamaño de la pantalla sin afectar la estructura lógica del contenido.
+
+        Se utiliza cuando se desea un diseño específico para diferentes tamaños de pantalla, optimizando la presentación de la información en cada caso.
+    -->
+    <div class="row bg-danger">
+       
+        <div class="col-4  order-md-3">
+          Columna 1
+        </div>
+        
+        <div class="col-4 order-md-2">
+          Columna 2
+        </div>
+        
+        <div class="col-4 order-md-1">
+          Columna 3
+        </div>
+    </div>
+
+    <!-- 
+        Asegúrate de incluir el archivo JavaScript de Bootstrap al final del cuerpo para garantizar un correcto funcionamiento.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
